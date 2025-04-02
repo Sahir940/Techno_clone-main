@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodNest Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 90%; /* Adjust width as needed */
+            max-width: 1200px; /* Maximum width for large screens */
+            padding: 20px;
+            background: #111; /* Slightly lighter background to emphasize container */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .content {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .content h1 {
+            color: #ffcc00; /* Highlighted yellow */
+        }
+
+        .content p,
+        .content ul {
+            line-height: 1.6;
+            color: #ddd; /* Light grey text for readability */
+        }
+
+        .form-container {
+            width: 45%;
+            padding: 20px;
+            background: #222; /* Dark grey form background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #ffcc00; /* Highlighted yellow */
+        }
+
+        .form-row {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc; /* Light grey text for labels */
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #555; /* Darker border for fields */
+            border-radius: 4px;
+            background: #333; /* Dark grey input background */
+            color: #fff; /* White text for inputs */
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffcc00; /* Highlighted yellow button */
+            color: #000; /* Black text on button */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #e6b800; /* Slightly darker yellow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="content">
+            <h1>🚀 Achieve Your Dream IT Career with Techno! 🚀</h1>
+            <p><strong>Are you ready to step into the world of IT?</strong></p>
+            <p>Our 100-day program is crafted for <strong>recent engineering graduates</strong> who aspire to land their dream job in the IT industry.</p>
+            <ul>
+                <li>Comprehensive curriculum tailored for beginners.</li>
+                <li>Hands-on training to master in-demand skills.</li>
+                <li>Experienced mentors to guide you every step of the way.</li>
+            </ul>
+            <p><strong>🗓️ New Batch Starts:</strong> 02nd December 2024</p>
+            <p><strong>📍 Mode:</strong> Online & Offline</p>
+            <p>🎓 Don't miss this chance to transform your career!</p>
+        </div>
+        <!-- Right Section (Form) -->
+        <div class="form-container">
+            <h2>Register for the Demo</h2>
+            <form id="demo-form">
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-row">
+                    <label for="graduation">Graduation Year:</label>
+                    <input type="number" id="graduation" name="graduation" min="2000" max="2030" required>
+                </div>
+                <div class="form-row">
+                    <label for="language">Preferred Language:</label>
+                    <select id="language" name="language" required>
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="kannada">Kannada</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Register Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('demo-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for registering! We will get back to you shortly.');
+        });
+    </script>
+</body>
+</html>
